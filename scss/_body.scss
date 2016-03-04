@@ -11,9 +11,50 @@ body {
 
     @media ($break2) {
       display: inline-block;
-      border: 1px solid red;
+      width: 100vw;
+      margin-top: 8px;
+      margin-bottom: -8px;
+      margin-left: -8px;
+      background-color: #4B4B4B;
+      font-family: $font;
+      height: 140px;
+      border-top: 2px solid black;
+      padding: 30px;
     }
+
+      .more {
+        border-left: 1px solid black;
+      }
+
+      .search {
+        float: right;
+        margin-right: 50px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+
+          p {
+            display: inline;
+            padding: 30px;
+          }
+      }
+
+      .dropdown {
+        display: none;
+      }
+
+      .blackBar {
+        background-color: black;
+        width: 120vw;
+        height: 2px;
+        display: block;
+        margin-left: -40px;
+        margin-top: 27px;
+      }
 }
+
 
 .gallery {
   display: flex;
@@ -48,61 +89,127 @@ body {
     .raft {
       background: url("../img/raft.jpg") bottom center no-repeat;
       @include galleryCard;
-        a img{ @include galleryIcon; }
+
+        a img{
+          @include galleryIcon;
+          @include iconTransition
+        }
+
+        &:hover{
+          @include iconScale;
+        }
 
           @media ($break1){
             width: 100%;
+          }
+
+          @media ($break2) {
+            width:50%;
           }
     }
 
     .basecamp {
       background: url("../img/basecamp.jpg") bottom center no-repeat;
       @include galleryCard;
-      a img{ @include galleryIcon; }
+      a img {
+        @include galleryIcon;
+        @include iconTransition;
+      }
+
+      &:hover{
+        @include iconScale;
+      }
 
         @media ($break1) {
           @include subGallery;
+        }
+
+        @media ($break2) {
+          width:25%;
         }
     }
 
     .backpacking {
       background: url("../img/backpacking.jpg") bottom center no-repeat;
       @include galleryCard;
-      a img{ @include galleryIcon; }
+      a img{
+        @include galleryIcon;
+        @include iconTransition
+      }
+
+      &:hover{
+        @include iconScale;
+      }
 
         @media ($break1) {
           @include subGallery;
+        }
+
+        @media ($break2) {
+          width:25%;
         }
     }
 
     .canoe {
       background: url("../img/canoe.jpg") bottom center no-repeat;
       @include galleryCard;
-      a img{ @include galleryIcon; }
+      a img{
+        @include galleryIcon;
+        @include iconTransition
+      }
+
+      &:hover{
+        @include iconScale;
+      }
 
         @media ($break1) {
           @include subGallery;
         }
 
+        @media ($break2) {
+          width:25%;
+        }
     }
 
     .photo {
       background: url("../img/photo.jpg") bottom center no-repeat;
       @include galleryCard;
-      a img{ @include galleryIcon; }
+      a img{
+        @include galleryIcon;
+        @include iconTransition
+      }
+
+      &:hover{
+        @include iconScale;
+      }
 
         @media ($break1) {
           @include subGallery;
+        }
+
+        @media ($break2) {
+          width:25%;
         }
     }
 
     .camp {
       background: url("../img/camp.jpg") bottom center no-repeat;
       @include galleryCard;
-      a img{ @include galleryIcon; }
+      a img{
+        @include galleryIcon;
+        @include iconTransition
+      }
+
+      &:hover{
+        @include iconScale;
+      }
 
       @media ($break1){
         width: 100%;
+      }
+
+      @media ($break2) {
+        width:50%;
       }
     }
 
