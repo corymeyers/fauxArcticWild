@@ -1,0 +1,71 @@
+.logo {
+  p {color: white;
+     font-size: 1.25em;
+     position: absolute;
+     left: 10px;
+     font-family: $headFont;
+     top: -3px;
+     left: 45px;
+    }
+
+  img {
+    position: absolute;
+    width: 25px;
+    top: 15px;
+    left: 15px;
+
+  }
+}
+
+
+
+.hero {
+  background: url("../img/hero.jpg") top center no-repeat;
+  background-size: cover;
+  margin: -8px;
+  color: white;
+  font-family: $font;
+  height: 500px;
+
+  @media (min-width: 900px) {
+    background-size: cover;
+    height: 100vh;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
+
+
+  }
+
+  h2 {
+    text-align: center;
+    font-family: $headFont;
+    margin: 0;
+    top: 300px;
+    font-size: 50px;
+    span {
+      font-family: $font;
+      font-size: 12px;
+    }
+  }
+}
+
+.sidebar {
+  display: none;
+
+  @media (min-width: 900px) {
+    display: block;
+  }
+}
+
+.toggleNav {
+  color: white;
+  font-size: 2.5em;
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+}

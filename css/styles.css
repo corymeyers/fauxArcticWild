@@ -5,6 +5,20 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.logo p {
+  color: white;
+  font-size: 1.25em;
+  position: absolute;
+  left: 10px;
+  font-family: "PT Serif", serif;
+  top: -3px;
+  left: 45px; }
+.logo img {
+  position: absolute;
+  width: 25px;
+  top: 15px;
+  left: 15px; }
+
 .hero {
   background: url("../img/hero.jpg") top center no-repeat;
   background-size: cover;
@@ -16,5 +30,48 @@
     .hero {
       background-size: cover;
       height: 100vh; } }
+  .hero img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px; }
+  .hero h2 {
+    text-align: center;
+    font-family: "PT Serif", serif;
+    margin: 0;
+    top: 300px;
+    font-size: 50px; }
+    .hero h2 span {
+      font-family: "Fjalla One", sans-serif;
+      font-size: 12px; }
+
+.sidebar {
+  display: none; }
+  @media (min-width: 900px) {
+    .sidebar {
+      display: block; } }
+
+.toggleNav {
+  color: white;
+  font-size: 2.5em;
+  text-decoration: none;
+  position: absolute;
+  right: 10px; }
+
+body {
+  background-color: #CDCDCD; }
+
+.navbar {
+  display: none; }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 9px; }
+  .gallery img {
+    max-width: 100%; }
+  .gallery div {
+    margin-top: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

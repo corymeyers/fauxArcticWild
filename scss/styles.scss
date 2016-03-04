@@ -10,18 +10,3 @@
 @import "_mixins.scss";
 @import "_header.scss";
 @import "_body.scss";
-
-
-.hero {
-  background: url("../img/hero.jpg") top center no-repeat;
-  background-size: cover;
-  margin: -8px;
-  color: white;
-  font-family: $font;
-  height: 500px;
-
-  @media (min-width: 900px) {
-    background-size: cover;
-    height: 100vh;
-  }
-}
