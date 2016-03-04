@@ -26,7 +26,7 @@
   color: white;
   font-family: "Fjalla One", sans-serif;
   height: 500px; }
-  @media (min-width: 900px) {
+  @media (min-width: 1100px) {
     .hero {
       background-size: cover;
       height: 100vh; } }
@@ -39,17 +39,41 @@
     text-align: center;
     font-family: "PT Serif", serif;
     margin: 0;
-    top: 300px;
+    margin-top: -40px;
     font-size: 50px; }
     .hero h2 span {
       font-family: "Fjalla One", sans-serif;
       font-size: 12px; }
+      @media (min-width: 775px) {
+        .hero h2 span {
+          font-size: 18px;
+          margin: 0; } }
+    @media (min-width: 775px) {
+      .hero h2 {
+        font-size: 70px;
+        padding-top: -500px; } }
+  .hero a {
+    display: none; }
+    @media (min-width: 775px) {
+      .hero a {
+        width: 175px;
+        height: 60px;
+        background-color: #dc7725;
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; } }
+    .hero a p {
+      text-align: center;
+      padding-top: 20px; }
 
 .sidebar {
   display: none; }
-  @media (min-width: 900px) {
+  @media (min-width: 1100px) {
     .sidebar {
-      display: block; } }
+      display: block;
+      position: absolute; } }
 
 .toggleNav {
   color: white;
@@ -64,18 +88,48 @@ body {
 .navbar {
   display: none; }
 
+.medNav {
+  display: none; }
+  @media (min-width: 1100px) {
+    .medNav {
+      display: inline-block;
+      border: 1px solid red; } }
+
 .gallery {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: 15px; }
+  margin: 8px -8px; }
+  @media (min-width: 775px) {
+    .gallery {
+      flex-direction: row; } }
+  .gallery p {
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+    font-size: 17pt;
+    margin-left: 35px;
+    margin-top: 15px; }
+  .gallery .galleryBar {
+    background-color: #dc7725;
+    width: 40px;
+    height: 4px;
+    margin-left: 35px;
+    margin-top: 5px; }
+    @media (min-width: 775px) {
+      .gallery .galleryBar {
+        margin-top: 80px; } }
   .gallery .raft {
     background: url("../img/raft.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
-    margin: 2%;
-    border-radius: 3px;
-    flex: 1; }
+    margin: 2% 4%;
+    margin-top: 20px;
+    border-radius: 3px; }
+    @media (min-width: 775px) {
+      .gallery .raft {
+        margin: 0;
+        border-radius: none;
+        height: 425px; } }
     .gallery .raft a img {
       background-color: rgba(52, 52, 51, 0.8);
       border-radius: 50%;
@@ -85,13 +139,26 @@ body {
       margin-left: auto;
       margin-right: auto;
       margin-top: 90px; }
+      @media (min-width: 775px) {
+        .gallery .raft a img {
+          border: 25px solid rgba(52, 52, 51, 0);
+          width: 90px;
+          margin-top: 160px; } }
+    @media (min-width: 775px) {
+      .gallery .raft {
+        width: 100%; } }
   .gallery .basecamp {
     background: url("../img/basecamp.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
-    margin: 2%;
-    border-radius: 3px;
-    flex: 1; }
+    margin: 2% 4%;
+    margin-top: 20px;
+    border-radius: 3px; }
+    @media (min-width: 775px) {
+      .gallery .basecamp {
+        margin: 0;
+        border-radius: none;
+        height: 425px; } }
     .gallery .basecamp a img {
       background-color: rgba(52, 52, 51, 0.8);
       border-radius: 50%;
@@ -101,13 +168,27 @@ body {
       margin-left: auto;
       margin-right: auto;
       margin-top: 90px; }
+      @media (min-width: 775px) {
+        .gallery .basecamp a img {
+          border: 25px solid rgba(52, 52, 51, 0);
+          width: 90px;
+          margin-top: 160px; } }
+    @media (min-width: 775px) {
+      .gallery .basecamp {
+        width: 50%;
+        flex-direction: row; } }
   .gallery .backpacking {
     background: url("../img/backpacking.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
-    margin: 2%;
-    border-radius: 3px;
-    flex: 1; }
+    margin: 2% 4%;
+    margin-top: 20px;
+    border-radius: 3px; }
+    @media (min-width: 775px) {
+      .gallery .backpacking {
+        margin: 0;
+        border-radius: none;
+        height: 425px; } }
     .gallery .backpacking a img {
       background-color: rgba(52, 52, 51, 0.8);
       border-radius: 50%;
@@ -117,13 +198,27 @@ body {
       margin-left: auto;
       margin-right: auto;
       margin-top: 90px; }
+      @media (min-width: 775px) {
+        .gallery .backpacking a img {
+          border: 25px solid rgba(52, 52, 51, 0);
+          width: 90px;
+          margin-top: 160px; } }
+    @media (min-width: 775px) {
+      .gallery .backpacking {
+        width: 50%;
+        flex-direction: row; } }
   .gallery .canoe {
     background: url("../img/canoe.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
-    margin: 2%;
-    border-radius: 3px;
-    flex: 1; }
+    margin: 2% 4%;
+    margin-top: 20px;
+    border-radius: 3px; }
+    @media (min-width: 775px) {
+      .gallery .canoe {
+        margin: 0;
+        border-radius: none;
+        height: 425px; } }
     .gallery .canoe a img {
       background-color: rgba(52, 52, 51, 0.8);
       border-radius: 50%;
@@ -133,13 +228,27 @@ body {
       margin-left: auto;
       margin-right: auto;
       margin-top: 90px; }
+      @media (min-width: 775px) {
+        .gallery .canoe a img {
+          border: 25px solid rgba(52, 52, 51, 0);
+          width: 90px;
+          margin-top: 160px; } }
+    @media (min-width: 775px) {
+      .gallery .canoe {
+        width: 50%;
+        flex-direction: row; } }
   .gallery .photo {
     background: url("../img/photo.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
-    margin: 2%;
-    border-radius: 3px;
-    flex: 1; }
+    margin: 2% 4%;
+    margin-top: 20px;
+    border-radius: 3px; }
+    @media (min-width: 775px) {
+      .gallery .photo {
+        margin: 0;
+        border-radius: none;
+        height: 425px; } }
     .gallery .photo a img {
       background-color: rgba(52, 52, 51, 0.8);
       border-radius: 50%;
@@ -149,13 +258,27 @@ body {
       margin-left: auto;
       margin-right: auto;
       margin-top: 90px; }
+      @media (min-width: 775px) {
+        .gallery .photo a img {
+          border: 25px solid rgba(52, 52, 51, 0);
+          width: 90px;
+          margin-top: 160px; } }
+    @media (min-width: 775px) {
+      .gallery .photo {
+        width: 50%;
+        flex-direction: row; } }
   .gallery .camp {
     background: url("../img/camp.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
-    margin: 2%;
-    border-radius: 3px;
-    flex: 1; }
+    margin: 2% 4%;
+    margin-top: 20px;
+    border-radius: 3px; }
+    @media (min-width: 775px) {
+      .gallery .camp {
+        margin: 0;
+        border-radius: none;
+        height: 425px; } }
     .gallery .camp a img {
       background-color: rgba(52, 52, 51, 0.8);
       border-radius: 50%;
@@ -165,5 +288,13 @@ body {
       margin-left: auto;
       margin-right: auto;
       margin-top: 90px; }
+      @media (min-width: 775px) {
+        .gallery .camp a img {
+          border: 25px solid rgba(52, 52, 51, 0);
+          width: 90px;
+          margin-top: 160px; } }
+    @media (min-width: 775px) {
+      .gallery .camp {
+        width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

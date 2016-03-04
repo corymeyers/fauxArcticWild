@@ -1,9 +1,15 @@
 @mixin galleryCard {
   background-size: cover;
   height: 250px;
-  margin: 2%;
+  margin: 2% 4%;
+  margin-top: 20px;
   border-radius: 3px;
-  flex:1;
+
+    @media ($break1) {
+      margin: 0;
+      border-radius: none;
+      height: 425px;
+    }
 }
 
 @mixin galleryIcon {
@@ -15,4 +21,15 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 90px;
+
+    @media ($break1) {
+      border: 25px solid rgba(52,52,51,0);
+      width: 90px;
+      margin-top: 160px;
+    }
+}
+
+@mixin subGallery {
+  width: 50%;
+  flex-direction: row;
 }

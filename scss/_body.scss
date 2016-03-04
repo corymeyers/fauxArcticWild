@@ -1,48 +1,109 @@
 body {
   background-color: #CDCDCD;
-
 }
 
 .navbar {
   display: none;
 }
 
+.medNav {
+  display: none;
+
+    @media ($break2) {
+      display: inline-block;
+      border: 1px solid red;
+    }
+}
+
 .gallery {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: 15px;
+  margin: 8px -8px;
+
+  @media ($break1) {
+    flex-direction: row;
+  }
+
+    p {
+      font-family: $font;
+      color: white;
+      font-size: 17pt;
+      margin-left: 35px;
+      margin-top: 15px;
+    }
+
+    .galleryBar {
+      background-color: $orangeBar;
+      width: 40px;
+      height: 4px;
+      margin-left: 35px;
+      margin-top: 5px;
+
+      @media ($break1) {
+        margin-top: 80px;
+      }
+    }
 
     .raft {
       background: url("../img/raft.jpg") bottom center no-repeat;
       @include galleryCard;
         a img{ @include galleryIcon; }
+
+          @media ($break1){
+            width: 100%;
+          }
     }
 
     .basecamp {
       background: url("../img/basecamp.jpg") bottom center no-repeat;
       @include galleryCard;
       a img{ @include galleryIcon; }
+
+        @media ($break1) {
+          @include subGallery;
+        }
     }
+
     .backpacking {
       background: url("../img/backpacking.jpg") bottom center no-repeat;
       @include galleryCard;
       a img{ @include galleryIcon; }
+
+        @media ($break1) {
+          @include subGallery;
+        }
     }
+
     .canoe {
       background: url("../img/canoe.jpg") bottom center no-repeat;
       @include galleryCard;
       a img{ @include galleryIcon; }
+
+        @media ($break1) {
+          @include subGallery;
+        }
+
     }
+
     .photo {
       background: url("../img/photo.jpg") bottom center no-repeat;
       @include galleryCard;
       a img{ @include galleryIcon; }
+
+        @media ($break1) {
+          @include subGallery;
+        }
     }
+
     .camp {
       background: url("../img/camp.jpg") bottom center no-repeat;
       @include galleryCard;
       a img{ @include galleryIcon; }
+
+      @media ($break1){
+        width: 100%;
+      }
     }
 
 
