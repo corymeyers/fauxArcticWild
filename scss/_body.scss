@@ -11,43 +11,40 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 9px;
+  margin-top: 15px;
 
-// .test {
-//   background: url("../img/raft.jpg") bottom center no-repeat;
-//   background-size: cover;
-//   height: 250px;
-//
-// }
+    .raft {
+      background: url("../img/raft.jpg") bottom center no-repeat;
+      @include galleryCard;
+        a img{ @include galleryIcon; }
+    }
 
-.raft {
-  background: url("..img/raft.jpg") bottom center no-repeat;
-  @include galleryCard;
-}
-.basecamp {
-  background: url("../img/basecamp.jpg") bottom center no-repeat;
-  @include galleryCard;
-}
-.backpacking {
-  background: url("../img/backpacking.jpg") bottom center no-repeat;
-  @include galleryCard;
-}
-.canoe {
-  background: url("../img/canoe.jpg") bottom center no-repeat;
-  @include galleryCard;
-}
-.photo {
-  background: url("../img/photo.jpg") bottom center no-repeat;
-  @include galleryCard;
-}
-.camp {
-  background: url("../img/camp.jpg") bottom center no-repeat;
-  @include galleryCard;
-}
+    .basecamp {
+      background: url("../img/basecamp.jpg") bottom center no-repeat;
+      @include galleryCard;
+      a img{ @include galleryIcon; }
+    }
+    .backpacking {
+      background: url("../img/backpacking.jpg") bottom center no-repeat;
+      @include galleryCard;
+      a img{ @include galleryIcon; }
+    }
+    .canoe {
+      background: url("../img/canoe.jpg") bottom center no-repeat;
+      @include galleryCard;
+      a img{ @include galleryIcon; }
+    }
+    .photo {
+      background: url("../img/photo.jpg") bottom center no-repeat;
+      @include galleryCard;
+      a img{ @include galleryIcon; }
+    }
+    .camp {
+      background: url("../img/camp.jpg") bottom center no-repeat;
+      @include galleryCard;
+      a img{ @include galleryIcon; }
+    }
 
-  div {
-    margin-top: 10px;
 
-  }
 
 }

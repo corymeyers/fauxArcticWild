@@ -68,38 +68,102 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 9px; }
+  margin-top: 15px; }
   .gallery .raft {
-    background: url("..img/raft.jpg") bottom center no-repeat;
+    background: url("../img/raft.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
+    margin: 2%;
+    border-radius: 3px;
     flex: 1; }
+    .gallery .raft a img {
+      background-color: rgba(52, 52, 51, 0.8);
+      border-radius: 50%;
+      border: 15px solid rgba(52, 52, 51, 0);
+      width: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 90px; }
   .gallery .basecamp {
     background: url("../img/basecamp.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
+    margin: 2%;
+    border-radius: 3px;
     flex: 1; }
+    .gallery .basecamp a img {
+      background-color: rgba(52, 52, 51, 0.8);
+      border-radius: 50%;
+      border: 15px solid rgba(52, 52, 51, 0);
+      width: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 90px; }
   .gallery .backpacking {
     background: url("../img/backpacking.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
+    margin: 2%;
+    border-radius: 3px;
     flex: 1; }
+    .gallery .backpacking a img {
+      background-color: rgba(52, 52, 51, 0.8);
+      border-radius: 50%;
+      border: 15px solid rgba(52, 52, 51, 0);
+      width: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 90px; }
   .gallery .canoe {
     background: url("../img/canoe.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
+    margin: 2%;
+    border-radius: 3px;
     flex: 1; }
+    .gallery .canoe a img {
+      background-color: rgba(52, 52, 51, 0.8);
+      border-radius: 50%;
+      border: 15px solid rgba(52, 52, 51, 0);
+      width: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 90px; }
   .gallery .photo {
     background: url("../img/photo.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
+    margin: 2%;
+    border-radius: 3px;
     flex: 1; }
+    .gallery .photo a img {
+      background-color: rgba(52, 52, 51, 0.8);
+      border-radius: 50%;
+      border: 15px solid rgba(52, 52, 51, 0);
+      width: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 90px; }
   .gallery .camp {
     background: url("../img/camp.jpg") bottom center no-repeat;
     background-size: cover;
     height: 250px;
+    margin: 2%;
+    border-radius: 3px;
     flex: 1; }
-  .gallery div {
-    margin-top: 10px; }
+    .gallery .camp a img {
+      background-color: rgba(52, 52, 51, 0.8);
+      border-radius: 50%;
+      border: 15px solid rgba(52, 52, 51, 0);
+      width: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 90px; }
 
 /*# sourceMappingURL=styles.css.map */
