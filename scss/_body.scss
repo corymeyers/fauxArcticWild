@@ -13,8 +13,19 @@ body {
   justify-content: space-between;
   margin-top: 9px;
 
+.test {
+  background: url("../img/raft.jpg") top center no-repeat;
+  background-image: url("../img/raft.jpg");
+
+  height: 500px;
+  width: 300px;
+  border: 1pt solid red;
+}
+
   img {
     max-width: 100%;
+    background-size: cover;
+
   }
 
   div {

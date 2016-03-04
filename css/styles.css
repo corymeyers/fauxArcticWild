@@ -69,8 +69,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 9px; }
+  .gallery .test {
+    background: url("../img/raft.jpg") top center no-repeat;
+    background-image: url("../img/raft.jpg");
+    height: 500px;
+    width: 300px;
+    border: 1pt solid red; }
   .gallery img {
-    max-width: 100%; }
+    max-width: 100%;
+    background-size: cover; }
   .gallery div {
     margin-top: 10px; }
 
