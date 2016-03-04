@@ -13,20 +13,37 @@ body {
   justify-content: space-between;
   margin-top: 9px;
 
-.test {
-  background: url("../img/raft.jpg") top center no-repeat;
-  background-image: url("../img/raft.jpg");
+// .test {
+//   background: url("../img/raft.jpg") bottom center no-repeat;
+//   background-size: cover;
+//   height: 250px;
+//
+// }
 
-  height: 500px;
-  width: 300px;
-  border: 1pt solid red;
+.raft {
+  background: url("..img/raft.jpg") bottom center no-repeat;
+  @include galleryCard;
 }
-
-  img {
-    max-width: 100%;
-    background-size: cover;
-
-  }
+.basecamp {
+  background: url("../img/basecamp.jpg") bottom center no-repeat;
+  @include galleryCard;
+}
+.backpacking {
+  background: url("../img/backpacking.jpg") bottom center no-repeat;
+  @include galleryCard;
+}
+.canoe {
+  background: url("../img/canoe.jpg") bottom center no-repeat;
+  @include galleryCard;
+}
+.photo {
+  background: url("../img/photo.jpg") bottom center no-repeat;
+  @include galleryCard;
+}
+.camp {
+  background: url("../img/camp.jpg") bottom center no-repeat;
+  @include galleryCard;
+}
 
   div {
     margin-top: 10px;

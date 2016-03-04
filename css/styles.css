@@ -69,15 +69,36 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 9px; }
-  .gallery .test {
-    background: url("../img/raft.jpg") top center no-repeat;
-    background-image: url("../img/raft.jpg");
-    height: 500px;
-    width: 300px;
-    border: 1pt solid red; }
-  .gallery img {
-    max-width: 100%;
-    background-size: cover; }
+  .gallery .raft {
+    background: url("..img/raft.jpg") bottom center no-repeat;
+    background-size: cover;
+    height: 250px;
+    flex: 1; }
+  .gallery .basecamp {
+    background: url("../img/basecamp.jpg") bottom center no-repeat;
+    background-size: cover;
+    height: 250px;
+    flex: 1; }
+  .gallery .backpacking {
+    background: url("../img/backpacking.jpg") bottom center no-repeat;
+    background-size: cover;
+    height: 250px;
+    flex: 1; }
+  .gallery .canoe {
+    background: url("../img/canoe.jpg") bottom center no-repeat;
+    background-size: cover;
+    height: 250px;
+    flex: 1; }
+  .gallery .photo {
+    background: url("../img/photo.jpg") bottom center no-repeat;
+    background-size: cover;
+    height: 250px;
+    flex: 1; }
+  .gallery .camp {
+    background: url("../img/camp.jpg") bottom center no-repeat;
+    background-size: cover;
+    height: 250px;
+    flex: 1; }
   .gallery div {
     margin-top: 10px; }
 
