@@ -6,6 +6,10 @@
      font-family: $headFont;
      top: -3px;
      left: 45px;
+
+       @media ($break2) {
+         padding-top: 27px;
+       }
     }
 
   img {
@@ -13,10 +17,12 @@
     width: 25px;
     top: 15px;
     left: 15px;
+
+    @media ($break2) {
+      padding-top: 27px;
+    }
   }
 }
-
-
 
 .hero {
   background: url("../img/hero.jpg") top center no-repeat;
@@ -29,6 +35,7 @@
   @media ($break2) {
     background-size: cover;
     height: 100vh;
+    border-bottom: 1px solid black;
   }
 
   img {
@@ -36,6 +43,10 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 120px;
+
+      @media ($break2) {
+        padding-top: 250px;
+      }
   }
 
   h2 {
@@ -57,7 +68,10 @@
       @media ($break1) {
         font-size: 70px;
         padding-top: -500px;
+      }
 
+      @media ($break2) {
+        font-size: 100px;
       }
   }
 
@@ -75,29 +89,13 @@
         margin-right: auto;
       }
 
+      @media ($break2) {
+        margin-top: 500px;
+      }
+
       p {
         text-align: center;
         padding-top: 20px;
       }
     }
-
-
-}
-//===============end hero
-
-.sidebar {
-  display: none;
-
-  @media ($break2) {
-    display: block;
-    position: absolute;
-  }
-}
-
-.toggleNav {
-  color: white;
-  font-size: 2.5em;
-  text-decoration: none;
-  position: absolute;
-  right: 10px;
 }

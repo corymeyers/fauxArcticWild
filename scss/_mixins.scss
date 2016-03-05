@@ -35,7 +35,7 @@
 }
 
 @mixin iconTransition {
-  transition: all .3s ease-in-out;
+  transition: transform .3s ease-in-out;
 }
 
 @mixin iconScale {

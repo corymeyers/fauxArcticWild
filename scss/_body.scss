@@ -1,5 +1,9 @@
 body {
   background-color: #CDCDCD;
+
+  @media ($break2) {
+    background:#4B4B4B
+  }
 }
 
 .navbar {
@@ -10,15 +14,11 @@ body {
   display: none;
 
     @media ($break2) {
-      display: inline-block;
-      width: 100vw;
+      display: block;
       margin-top: 8px;
       margin-bottom: -8px;
-      margin-left: -8px;
-      background-color: #4B4B4B;
       font-family: $font;
       height: 140px;
-      border-top: 2px solid black;
       padding: 30px;
     }
 
@@ -47,172 +47,10 @@ body {
 
       .blackBar {
         background-color: black;
-        width: 120vw;
         height: 2px;
         display: block;
+        width: 98.87vw;
         margin-left: -40px;
         margin-top: 27px;
       }
-}
-
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 8px -8px;
-
-  @media ($break1) {
-    flex-direction: row;
-  }
-
-    p {
-      font-family: $font;
-      color: white;
-      font-size: 17pt;
-      margin-left: 35px;
-      margin-top: 15px;
-    }
-
-    .galleryBar {
-      background-color: $orangeBar;
-      width: 40px;
-      height: 4px;
-      margin-left: 35px;
-      margin-top: 5px;
-
-      @media ($break1) {
-        margin-top: 80px;
-      }
-    }
-
-    .raft {
-      background: url("../img/raft.jpg") bottom center no-repeat;
-      @include galleryCard;
-
-        a img{
-          @include galleryIcon;
-          @include iconTransition
-        }
-
-        &:hover{
-          @include iconScale;
-        }
-
-          @media ($break1){
-            width: 100%;
-          }
-
-          @media ($break2) {
-            width:50%;
-          }
-    }
-
-    .basecamp {
-      background: url("../img/basecamp.jpg") bottom center no-repeat;
-      @include galleryCard;
-      a img {
-        @include galleryIcon;
-        @include iconTransition;
-      }
-
-      &:hover{
-        @include iconScale;
-      }
-
-        @media ($break1) {
-          @include subGallery;
-        }
-
-        @media ($break2) {
-          width:25%;
-        }
-    }
-
-    .backpacking {
-      background: url("../img/backpacking.jpg") bottom center no-repeat;
-      @include galleryCard;
-      a img{
-        @include galleryIcon;
-        @include iconTransition
-      }
-
-      &:hover{
-        @include iconScale;
-      }
-
-        @media ($break1) {
-          @include subGallery;
-        }
-
-        @media ($break2) {
-          width:25%;
-        }
-    }
-
-    .canoe {
-      background: url("../img/canoe.jpg") bottom center no-repeat;
-      @include galleryCard;
-      a img{
-        @include galleryIcon;
-        @include iconTransition
-      }
-
-      &:hover{
-        @include iconScale;
-      }
-
-        @media ($break1) {
-          @include subGallery;
-        }
-
-        @media ($break2) {
-          width:25%;
-        }
-    }
-
-    .photo {
-      background: url("../img/photo.jpg") bottom center no-repeat;
-      @include galleryCard;
-      a img{
-        @include galleryIcon;
-        @include iconTransition
-      }
-
-      &:hover{
-        @include iconScale;
-      }
-
-        @media ($break1) {
-          @include subGallery;
-        }
-
-        @media ($break2) {
-          width:25%;
-        }
-    }
-
-    .camp {
-      background: url("../img/camp.jpg") bottom center no-repeat;
-      @include galleryCard;
-      a img{
-        @include galleryIcon;
-        @include iconTransition
-      }
-
-      &:hover{
-        @include iconScale;
-      }
-
-      @media ($break1){
-        width: 100%;
-      }
-
-      @media ($break2) {
-        width:50%;
-      }
-    }
-
-
-
 }

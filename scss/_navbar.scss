@@ -1,0 +1,44 @@
+.sidebar {
+  display: none;
+
+  @media ($break2) {
+    display: block;
+    position: absolute;
+    width: 99%;
+  }
+
+  li {
+    display: inline;
+
+    a {
+      font-family: $font;
+      color: white;
+      text-decoration: none;
+      float: right;
+      margin: 50px;
+
+      &:hover {
+        color: orange;
+      }
+
+    }
+  }
+  // ul {
+  //   color: white;
+  //   float: right;font-family: $font;
+  //   color: white;
+  //   text-decoration: none;
+  // }
+}
+
+.toggleNav {
+  color: white;
+  font-size: 2.5em;
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+
+    @media ($break1) {
+      display: none;
+    }
+}
